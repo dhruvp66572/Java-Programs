@@ -1,0 +1,2 @@
+public class ThreadTutionP1 {
+}

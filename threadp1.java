@@ -1,0 +1,2 @@
+public class threadp1 {
+}
