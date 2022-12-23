@@ -15,8 +15,9 @@ public class ThreadDemo1 implements Runnable {
     }
 
     public static void main(String[] args) {
-        ThreadDemo1 ob = new ThreadDemo1("Thread 1");
-        ThreadDemo1 ob1 = new ThreadDemo1("Thread 2");
-        ThreadDemo1 ob2 = new ThreadDemo1("Thread 3");
+
+        for (int i = 1; i < 5; i++) {
+            ThreadDemo1 ob = new ThreadDemo1("Thread "+i);
+        }
     }
 }

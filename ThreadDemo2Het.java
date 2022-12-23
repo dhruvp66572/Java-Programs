@@ -1,8 +1,7 @@
-public class ThreadDemo2 implements Runnable{
+public class ThreadDemo2Het implements Runnable{
     Thread t;
     static int count;
-
-    public ThreadDemo2(String s, int p) {
+    public ThreadDemo2Het(String s, int p) {
         ThreadGroup tg1 = new ThreadGroup("One");
         t = new Thread(tg1, this, s);
         t.setPriority(p);
@@ -45,7 +44,7 @@ public class ThreadDemo2 implements Runnable{
     }
 
     public static void main(String[] args) {
-        ThreadDemo2 t = new ThreadDemo2("Thread 1", 10);
-        ThreadDemo2 t1 = new ThreadDemo2("Thread 2", 10);
+        ThreadDemo2Het t = new ThreadDemo2Het("Thread 1", 10);
+        ThreadDemo2Het t1 = new ThreadDemo2Het("Thread 2", 10);
     }
 }
